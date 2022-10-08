@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" value="sdfhskjfch" readonly><br>
+        <input type="text" value="sdfhskjfch" disabled><br>
+        <!-- with size attribute you enter any nuymber of text but visible will be only the value passed ir 50 here -->
+        <input type="text" value="sdfhskjfch" size="50"><br>
+        <input type="text" value="sdfhskjfch" maxlength="20" size="50"><br>
+        <input type="number" min="10" max="20"><br>
+        <!-- min and max can be used with number , date and range input types -->
+        <input type="text" placeholder="enter here"><br>
+        <input type="text" placeholder="enter here" required><br>
+        <input type="number" value="1" step="2"><br>
+        <!-- with autofocus cursor jumps directly to that textbox -->
+        <input type="text" autofocus><br>
+        <!-- with autocomplete the browser will give hint to you on form submission- -->
+        <input type="text" autocomplete="on"><br>
+        <input type="text" name=""><br>
+        <input type="submit" value="go"><br>
+
+
+        <!-- in textarea we dont use value attribute like we did for other inputs rather we mention the value between the tags only -->
+
+        <textarea cols="40" rows="20" placeholder="enter description">Hello</textarea>
+
+
+        <input type="image" src="https://www.pngmart.com/files/3/Submit-Button-PNG-Picture.png" width="100" height="50">
+
+        <!-- for dropdown in form we use select -->
+        <select size="2" multiple>
+            <option value="AUDI">audi</option>
+            <option value="TATA" selected>tata</option>
+            <option value="BMW">bmw</option>
+            <option value="MG">mg</option>
+        </select>
+
+        <!-- MUTIPLE OPTIONS IN A SINGLE DROPDOWN -->
+        <select>
+            <optgroup label="CARS">
+                <option value="AUDI">audi</option>
+                <option value="TATA" selected>tata</option>
+                <option value="BMW">bmw</option>
+                <option value="MG">mg</option>
+            </optgroup>
+            <optgroup label="SPORTS">
+                <option value="FOTBALL">football</option>
+                <option value="CRIC" selected>cricket</option>
+                <option value="HOCK">hockey</option>
+                <option value="TT">TT</option>
+            </optgroup>
+        </select>
+    </form>
+</body>
+
+</html>
